@@ -16,8 +16,8 @@ public class RollingBall extends JPanel implements ActionListener {
     }
 public void paintComponent(Graphics g){
     super.paintComponent(g);
-    g.drawOval(100,90,80,80);
-    g.fillArc(100,90,80,80,   0,180);
+    g.drawOval(x,y,80,80);
+    g.fillArc(x,y,80,80,   start_angle,180);
 }
 @Override
 public void actionPerformed(ActionEvent e) {
